@@ -30,3 +30,9 @@ input{
     margin-left: 20vw;
     margin-right: 20vw;
 }
+.list-inline{
+    padding-left:20vw;
+}
+.list-inline-item{
+    min-width: 12vw;
+}
