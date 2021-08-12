@@ -27,13 +27,16 @@ formx.addEventListener('submit', (event) => {
             console.log(`<a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${i}">${thadata[i].position}</a>`)
             
             const html = 
-                `<a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${i}">${thadata[i].position}</a>`;
-                document.getElementsByClassName('.Driver_List').insertAdjacentHTML('beforeend', html)
-                // <a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${i}">${thadata[i].Driver.givenName}</a>
-                // <a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${i}">${thadata[i].Driver.nationality}</a>
-                // <a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${i}">${thadata[i].Constructors[0].name}</a>
-                // <a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${i}">${thadata[i].points}</a>`
-                // document.getElementsByClassName('.Driver_List').insertAdjacentHTML('beforeend',"<h2>the dude</h2>")
+                `<ul class="list-inline"><li class="list-inline-item" id="${i}">${thadata[i].position}</a>
+                <li class="list-inline-item id="${i}">${thadata[i].Driver.givenName}</li>
+                <li class="list-inline-item id="${i}">${thadata[i].Driver.nationality}</li>
+                <li class="list-inline-item id="${i}">${thadata[i].Constructors[0].name}</li>
+                <li class="list-inline-item id="${i}">${thadata[i].points}</li></ul>`
+            
+            let z = document.getElementById('Driver-List')
+            console.log(z)
+            z.insertAdjacentHTML('beforeend', html)
+                
              
             }
         }   
