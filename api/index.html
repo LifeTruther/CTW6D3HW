@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<title>Racing API</title>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Ranger Data HTML Elements -->
+    <div class="container">
+        <div class="row">
+            <h1>Welcome to the Racing Stats World!</h1>
+        </div>
+        
+        
+        <div class="row">
+            <form name="testData" class="form-control" id="queryDataForm">
+                <label for="season" id="firstlabel">Season</label>
+                <input type="text" name="season" id='season'>
+        
+                <label for="round">Round</label>
+                <input type="text" name="round" id='round'>
+        
+                <button type="submit" id="submitButton" class="btn btn-light">Submit Form</button>
+            </form>
+        </div>
+        
+        
+        <div class="row">
+            <section class="list-group" id="Driver-List">
+
+            </section>
+        </div>
+
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

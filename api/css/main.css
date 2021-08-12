@@ -1,0 +1,32 @@
+
+h1{
+    text-align: center;
+}
+
+.row{
+    display:flex;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 2vh
+}
+
+.btn{
+    margin: 3vw;
+    max-width: 20vw;
+}
+
+label{
+    padding: 4px;
+}
+input{
+    margin: 5px;
+}
+
+#submitButton{
+    margin: 5px;
+}
+
+.form-control{
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
